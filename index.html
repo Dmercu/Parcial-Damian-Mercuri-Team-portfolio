@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Team Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/black-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body id="myPage">
+    <!-- Sidebar on click -->
+    <aside
+      class="untref-sidebar untref-bar-block untref-white untref-card untref-animate-left untref-xxlarge"
+      style="display: none; z-index: 2"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="untref_close()"
+        class="untref-bar-item untref-button untref-display-topright untref-text-teal"
+        >Close
+        <i class="fa fa-remove"></i>
+      </a>
+      <a href="#" class="untref-bar-item untref-button">Link 1</a>
+      <a href="#" class="untref-bar-item untref-button">Link 2</a>
+      <a href="#" class="untref-bar-item untref-button">Link 3</a>
+      <a href="#" class="untref-bar-item untref-button">Link 4</a>
+      <a href="#" class="untref-bar-item untref-button">Link 5</a>
+    </aside>
+
+    <!-- Navbar -->
+    <nav class="untref-top">
+      <div class="untref-bar untref-theme-d2 untref-left-align">
+        <a
+          class="untref-bar-item untref-button untref-hide-medium untref-hide-large untref-right untref-hover-white untref-theme-d2"
+          href="javascript:void(0);"
+          onclick="openNav()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="#" class="untref-bar-item untref-button untref-teal"
+          ><i class="fa fa-home untref-margin-right"></i>Logo</a
+        >
+        <a
+          href="#team"
+          class="untref-bar-item untref-button untref-hide-small untref-hover-white"
+          >Team</a
+        >
+        <a
+          href="#work"
+          class="untref-bar-item untref-button untref-hide-small untref-hover-white"
+          >Work</a
+        >
+        <a
+          href="#pricing"
+          class="untref-bar-item untref-button untref-hide-small untref-hover-white"
+          >Price</a
+        >
+        <a
+          href="#contact"
+          class="untref-bar-item untref-button untref-hide-small untref-hover-white"
+          >Contact</a
+        >
+        <div class="untref-dropdown-hover untref-hide-small">
+          <button class="untref-button" title="Notifications">
+            Dropdown <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="untref-dropdown-content untref-card-4 untref-bar-block">
+            <a href="#" class="untref-bar-item untref-button">Link</a>
+            <a href="#" class="untref-bar-item untref-button">Link</a>
+            <a href="#" class="untref-bar-item untref-button">Link</a>
+          </div>
+        </div>
+        <a
+          href="#"
+          class="untref-bar-item untref-button untref-hide-small untref-right untref-hover-teal"
+          title="Search"
+          ><i class="fa fa-search"></i
+        ></a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="untref-bar-block untref-theme-d2 untref-hide untref-hide-large untref-hide-medium"
+      >
+        <a href="#team" class="untref-bar-item untref-button">Team</a>
+        <a href="#work" class="untref-bar-item untref-button">Work</a>
+        <a href="#pricing" class="untref-bar-item untref-button">Price</a>
+        <a href="#contact" class="untref-bar-item untref-button">Contact</a>
+        <a href="#" class="untref-bar-item untref-button">Search</a>
+      </div>
+    </nav>
+
+    <!-- Image Header -->
+    <section class="untref-display-container untref-animate-opacity">
+      <img
+        src="./img/sailboat.jpg"
+        alt="boat"
+        style="width: 100%; min-height: 350px; max-height: 600px"
+      />
+      <div
+        class="untref-container untref-display-bottomleft untref-margin-bottom"
+      >
+        <button
+          onclick="document.getElementById('id01').style.display='block'"
+          class="untref-button untref-xlarge untref-theme untref-hover-teal"
+          title="Go To UNTREF"
+        >
+          UNTREF
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <section id="id01" class="untref-modal">
+      <div class="untref-modal-content untref-card-4 untref-animate-top">
+        <header class="untref-container untref-teal untref-display-container">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="untref-button untref-teal untref-display-topright"
+            ><i class="fa fa-remove"></i
+          ></span>
+          <h4>Oh snap! We just showed you a modal..</h4>
+          <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+        </header>
+        <div class="untref-container">
+          <p>Cool huh? Ok, enough teasing around..</p>
+          <p>
+            Go to our
+            <a class="untref-text-teal" href="/untrefcss/default.asp"
+              >UNTREF Tutorial</a
+            >
+            to learn more!
+          </p>
+        </div>
+        <footer class="untref-container untref-teal">
+          <p>Modal footer</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Team Container -->
+    <section class="untref-container untref-padding-64 untref-center" id="team">
+      <h2>OUR TEAM</h2>
+      <p>Meet the team - our office rats:</p>
+
+      <div class="untref-row">
+        <br />
+
+        <div class="untref-quarter">
+          <img
+            src="./img/avatar.jpg"
+            alt="Boss"
+            style="width: 45%"
+            class="untref-circle untref-hover-opacity"
+          />
+          <h3>Johnny Walker</h3>
+          <p>Web Designer</p>
+        </div>
+
+        <div class="untref-quarter">
+          <img
+            src="./img/avatar.jpg"
+            alt="Boss"
+            style="width: 45%"
+            class="untref-circle untref-hover-opacity"
+          />
+          <h3>Rebecca Flex</h3>
+          <p>Support</p>
+        </div>
+
+        <div class="untref-quarter">
+          <img
+            src="./img/avatar.jpg"
+            alt="Boss"
+            style="width: 45%"
+            class="untref-circle untref-hover-opacity"
+          />
+          <h3>Jan Ringo</h3>
+          <p>Boss man</p>
+        </div>
+
+        <div class="untref-quarter">
+          <img
+            src="./img/avatar.jpg"
+            alt="Boss"
+            style="width: 45%"
+            class="untref-circle untref-hover-opacity"
+          />
+          <h3>Kai Ringo</h3>
+          <p>Fixer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODO: Work Row -->
+
+    <!-- Container -->
+    <section class="untref-container" style="position: relative">
+      <a
+        onclick="untref_open()"
+        class="untref-button untref-xlarge untref-circle untref-teal"
+        style="position: absolute; top: -28px; right: 24px"
+        >+</a
+      >
+    </section>
+
+    <!-- TODO: Pricing -->
+
+    <!-- TODO: Contact Container -->
+
+    <!-- Image of location/map -->
+    <img
+      src="./img/map.jpg"
+      class="untref-image untref-greyscale-min"
+      style="width: 100%"
+    />
+    <!-- Footer -->
+    <footer
+      class="untref-container untref-padding-32 untref-theme-d1 untref-center"
+    >
+      <h4>Follow Us</h4>
+      <a
+        class="untref-button untref-large untref-teal"
+        href="javascript:void(0)"
+        title="Facebook"
+        ><i class="fa fa-facebook"></i
+      ></a>
+      <a
+        class="untref-button untref-large untref-teal"
+        href="javascript:void(0)"
+        title="Twitter"
+        ><i class="fa fa-twitter"></i
+      ></a>
+      <a
+        class="untref-button untref-large untref-teal"
+        href="javascript:void(0)"
+        title="Google +"
+        ><i class="fa fa-google-plus"></i
+      ></a>
+      <a
+        class="untref-button untref-large untref-teal"
+        href="javascript:void(0)"
+        title="Google +"
+        ><i class="fa fa-instagram"></i
+      ></a>
+      <a
+        class="untref-button untref-large untref-teal untref-hide-small"
+        href="javascript:void(0)"
+        title="Linkedin"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+      <p>
+        Powered by
+        <u>UNTREF</u>
+      </p>
+
+      <div
+        style="position: relative; bottom: 100px; z-index: 1"
+        class="untref-tooltip untref-right"
+      >
+        <span class="untref-text untref-padding untref-teal untref-hide-small"
+          >Go To Top</span
+        >
+        <a class="untref-button untref-theme" href="#myPage"
+          ><span class="untref-xlarge">
+            <i class="fa fa-chevron-circle-up"></i></span
+        ></a>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
