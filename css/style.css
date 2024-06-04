@@ -1624,3 +1624,27 @@ body {
 .mySlides {
   display: none;
 }
+
+.ourwork{
+  position: relative;
+  display: flex; 
+  flex-wrap: wrap;
+  padding: 64px 10px;
+  background-color: #333333;
+  color: #FFFFFF;
+}
+.card-container {  
+  position: relative;
+  background-color: #FFFFFF;
+  color: #000; 
+  
+  img{
+    position: relative;
+    width: 100%;
+  }
+
+  h3, h4 , p{
+    padding-left: 5px;
+  }
+  
+}
