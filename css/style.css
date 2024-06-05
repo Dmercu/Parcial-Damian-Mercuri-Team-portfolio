@@ -1673,18 +1673,15 @@ body {
 }
 
 .card_work {
-  position: relative;
+  width: 380px;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  padding-bottom: 10px;
   background: transparent;
-  width: 180px;
-  margin-right: 150px;
-
-  p {
-    text-align: left;
-  }
+  color: #ffffff;
 }
 
 .card_name {
