@@ -1625,65 +1625,131 @@ body {
   display: none;
 }
 
-.ourwork {
+.container {
+  padding: 60px 0px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
   justify-content: center;
-  text-align: left;
-  padding: 64px 10px;
-  background-color: #333333;
-  color: #ffffff;
+  background: #333333;
 }
-.card-container {
+
+.card {
+  background: #f3f3f3;
+  width: 380px;
+  height: 500px;
   display: inline-block;
-  background-color: #ffffff;
-  color: #000;
+  z-index: 9999;
+  margin: 5px;
+}
 
-  img {
-    position: relative;
-    width: 100%;
-  }
+.card_snow {
+  position: relative;
+  height: 200px;
+  margin-bottom: 10px;
+  background-image: url("../img/snow.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-  h3,
-  h4,
+.card_lights {
+  position: relative;
+  height: 200px;
+  margin-bottom: 10px;
+  background-image: url("../img/lights.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card_mountains {
+  position: relative;
+  height: 200px;
+  margin-bottom: 10px;
+  background-image: url("../img/mountains.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card_work {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  color: #ffffff;
+  background: transparent;
+  width: 180px;
+  margin-right: 150px;
+
   p {
-    display: flex;
-    padding-left: 5px;
-  }
-
-  span {
-    font-weight: bold;
+    text-align: left;
   }
 }
-.precing-container {
+
+.card_name {
+  font-size: 26px;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.card_description {
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  text-align: left;
+}
+.container-pricing {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-text {
+  padding-top: 64px;
+  margin: 10px 0;
+}
+.pricing-card {
+  border: solid 1px #dddddd;
+  width: 380px;
+  height: 500px;
   margin: 10px;
-  border: 1px solid rgba(204, 204, 204, 1);
-  
+
+  h3 {
+    background: #000000;
+    color: #ffffff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.precing-card {
-  display: flex;
-  background: #000;
-  color: #ffffff;
+.pricing-card-pro {
+  border: solid 1px #dddddd;
+  width: 380px;
+  height: 500px;
+
+  h3 {
+    background: #dddddd;
+    color: #ffffff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.pricing-card-gray {
   height: 80px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
-}
-.precing-card-gray{
-  display: flex;
-  background: #CCCCCC;
-  height: 80px;
-  align-items: center;
-  justify-content: center;
+  background: #f0f0f0;
 }
 
-.precing-card-pro{
-  display: flex;
-  background: #666666;
-  color: #ffffff;
-  height: 80px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
